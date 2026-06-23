@@ -1,2 +1,3 @@
 FROM nginx
-COPY . /usr/share/nginx/html/
+RUN rm -rf /usr/share/nginx/html/*
+COPY corso-1.0.0/ /usr/share/nginx/html/
